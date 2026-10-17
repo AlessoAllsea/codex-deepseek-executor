@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "deepseek-executor",
+  "version": "1.1.0",
+  "description": "按需调用本机 DeepSeek Harness 完成编码与测试，由 Codex 规划并验收。",
+  "keywords": [
+    "deepseek",
+    "coding",
+    "delegation",
+    "local"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "DeepSeek 执行助手",
+        "shortDescription": "选择后将编码和测试交给 DeepSeek，Codex 负责审查",
+        "longDescription": "按需使用本机 DeepSeek Harness 完成编码、调试及测试，Codex 负责规划和验收。自带 Python 调用器和隔离配置向导，不打包凭据。支持 macOS，已验证 Harness 0.2.1-rc.2；DeepSeek API 独立计费。",
+        "developerName": "18011449431",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "defaultPrompt": [
+          "使用 DeepSeek 执行助手完成这个编码任务：你先规划，让 DeepSeek 实现和测试，最后由你验收。"
+        ],
+        "brandColor": "#2563EB",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg",
+        "websiteURL": "https://github.com/18011449431/codex-deepseek-executor"
+      }
+    }
+  },
+  "license": "MIT",
+  "author": {
+    "name": "18011449431",
+    "url": "https://github.com/18011449431"
+  },
+  "homepage": "https://github.com/18011449431/codex-deepseek-executor",
+  "repository": "https://github.com/18011449431/codex-deepseek-executor"
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "DeepSeek 执行助手"
+  short_description: "按需委派本机编码任务，让 DeepSeek 实现并测试，再由 Codex 审查验收"
+  default_prompt: "使用 $deepseek-executor:deepseek 处理这个项目：先规划，将实现和测试交给 DeepSeek，最后审查验收。"
+policy:
+  allow_implicit_invocation: false

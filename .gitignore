@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.env
+.env.*
+.credentials.yaml
+config.json
+runtime-pin.json
+*.jsonl
+*result*.json
+state/
+.state/
+.pytest_cache/
